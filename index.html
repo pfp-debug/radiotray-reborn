@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RadioTray [reborn] - Online Radio Streaming Player for Linux</title>
+    <meta name="description" content="A modern, lightweight online radio streaming player that lives in your system tray. Built for Linux with GTK and GStreamer.">
+    <link rel="icon" type="image/x-icon" href="radiotray-favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', 'Ubuntu', sans-serif; background: linear-gradient(135deg, #1a1a2e, #16213e); color: #e8e8e8; min-height: 100vh; line-height: 1.6; }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        header { text-align: center; padding: 60px 20px; background: linear-gradient(180deg, rgba(255,107,107,0.15), transparent); }
+        .logo { font-size: 3.5rem; font-weight: bold; background: linear-gradient(135deg, #ff6b6b, #feca57, #48dbfb); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 10px; }
+        .tagline { font-size: 1.4rem; color: #a0a0a0; margin-bottom: 30px; }
+        .download-section { background: rgba(255,255,255,0.05); border-radius: 20px; padding: 40px; margin: 40px 0; text-align: center; border: 1px solid rgba(255,255,255,0.1); }
+        .download-btn { display: inline-block; background: linear-gradient(135deg, #ff6b6b, #ee5a5a); color: white; padding: 18px 50px; border-radius: 50px; text-decoration: none; font-size: 1.2rem; font-weight: bold; margin: 15px; box-shadow: 0 4px 20px rgba(255,107,107,0.4); }
+        .download-btn:hover { transform: translateY(-3px); box-shadow: 0 6px 30px rgba(255,107,107,0.6); }
+        .download-btn.secondary { background: linear-gradient(135deg, #48dbfb, #3498db); box-shadow: 0 4px 20px rgba(72,219,251,0.4); }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin: 50px 0; }
+        .feature { background: rgba(255,255,255,0.03); border-radius: 15px; padding: 30px; border: 1px solid rgba(255,255,255,0.08); }
+        .feature:hover { background: rgba(255,255,255,0.06); transform: translateY(-5px); border-color: rgba(255,107,107,0.3); }
+        .feature-icon { font-size: 2.5rem; margin-bottom: 15px; }
+        .feature h3 { color: #feca57; margin-bottom: 10px; }
+        footer { text-align: center; padding: 40px; margin-top: 50px; border-top: 1px solid rgba(255,255,255,0.1); color: #707070; }
+        footer a { color: #48dbfb; text-decoration: none; }
+        .screenshot { background: rgba(255,255,255,0.03); border-radius: 15px; padding: 20px; margin: 20px 0; text-align: center; }
+        .screenshot img { max-width: 100%; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
+        .screenshots h2 { text-align: center; color: #feca57; margin: 40px 0 30px; }
+        .version { color: #48dbfb; margin-top: 15px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="screenshots/screenshot1.png" alt="RadioTray" style="max-width: 150px; border-radius: 30px; margin-bottom: 20px;">
+            <h1 class="logo">RadioTray [reborn]</h1>
+            <p class="tagline">A modern online radio streaming player for Linux</p>
+            <p style="color: #888; max-width: 600px; margin: 0 auto;">
+                Lightweight, feature-rich, and lives in your system tray. Built with GTK, GStreamer, and Python 3.10+.
+            </p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="download-section">
+            <h2>Download</h2>
+            <a href="releases/radiotray-reborn_0.7.5-1_all.deb" class="download-btn">Download .deb Package</a>
+            <a href="releases/radiotray-reborn_0.7.5.orig.tar.gz" class="download-btn secondary">Download Source Archive</a>
+            <p class="version">Version 0.7.5 | Released March 2026</p>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">&#127911;</div>
+                <h3>System Tray</h3>
+                <p>Lives in your system tray. Minimal resource usage, maximum convenience.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">&#127925;</div>
+                <h3>GStreamer</h3>
+                <p>High-quality audio with GStreamer. Supports all major streaming formats.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">&#127932;</div>
+                <h3>Metadata</h3>
+                <p>Displays track info and notifications on song changes.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">&#128266;</div>
+                <h3>Volume Control</h3>
+                <p>Easy volume with mouse scroll wheel.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">&#128250;</div>
+                <h3>Station Icons</h3>
+                <p>Custom favicons for each station.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">&#128421;</div>
+                <h3>Plugins</h3>
+                <p>Editor, History, Sleep Timer, AutoPlay, Notification and more.</p>
+            </div>
+        </div>
+
+        <div class="screenshots">
+            <h2>Screenshots</h2>
+            <div class="screenshot">
+                <img src="screenshots/screenshot2.png" alt="RadioTray Editor">
+                <p style="margin-top: 15px; color: #888;">Built-in bookmarks editor</p>
+            </div>
+            <div class="screenshot">
+                <img src="screenshots/screenshot3.png" alt="RadioTray Tree View">
+                <p style="margin-top: 15px; color: #888;">Easy station management</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>RadioTray [reborn]</strong> - Free and open source software</p>
+        <p style="margin-top: 10px;"><a href="https://github.com/radiotray-reborn">Source Code</a> | <a href="https://sourceforge.net/projects/radiotray-reborn/">SourceForge</a></p>
+        <p style="margin-top: 20px;">Released under GPL-3.0 License</p>
+    </footer>
+</body>
+</html>
