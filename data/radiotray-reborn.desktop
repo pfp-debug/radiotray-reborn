@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=RadioTray [reborn]
+Comment=Online radio streaming player
+Exec=radiotray-reborn %u
+Icon=radiotray-reborn
+Terminal=false
+Type=Application
+Categories=Network;
+StartupNotify=false
+MimeType=x-scheme-handler/radio;
+Keywords=radio;streaming;audio;player;internet;

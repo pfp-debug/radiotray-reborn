@@ -1,0 +1,26 @@
+#!/bin/bash
+# RadioTray - Wrapper script
+# Finds Python interpreter with working PyGObject support
+
+find_python() {
+    local pythons="python3 python3.12 python3.11 python3.10"
+    for py in $pythons; do
+        if command -v "$py" &>/dev/null; then
+            if "$py" -c "import gi; gi.require_version('Gtk', '3.0')" 2>/dev/null; then
+                echo "$py"
+                return 0
+            fi
+        fi
+    done
+    return 1
+}
+
+PYTHON=$(find_python)
+
+if [ -z "$PYTHON" ]; then
+    echo "Error: No Python with PyGObject support found" >&2
+    echo "Please install python3-gi package" >&2
+    exit 1
+fi
+
+exec "$PYTHON" -m radiotray "$@"

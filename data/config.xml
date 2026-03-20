@@ -1,0 +1,13 @@
+<config>
+  <option name="volume_increment" value="0.05"/>
+  <option name="volume_level" value="1.0"/>
+  <option name="url_timeout" value="30"/>
+  <option name="buffer_size" value="164000"/>
+  <option name="active_plugins">
+    <item>Notification</item>
+    <item>Sleep Timer</item>
+    <item>History</item>
+    <item>Station Switcher</item>
+    <item>Editor</item>
+  </option>
+</config>

@@ -1,0 +1,7 @@
+[Plugin]
+name = MATE Media Keys
+description = Multimedia key support for MATE desktop
+author = RadioTray Contributors
+version = 1.0
+module = mate_media_keys
+class = MateMediaKeysPlugin

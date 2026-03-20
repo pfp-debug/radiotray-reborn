@@ -1,0 +1,7 @@
+[Plugin]
+name = MPRIS
+description = MPRIS2 interface for external media player control
+author = RadioTray Contributors
+version = 1.0
+module = mpris
+class = MprisPlugin

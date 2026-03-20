@@ -1,0 +1,7 @@
+[Plugin]
+name = Editor
+description = Bookmarks Editor - Configure radio stations and groups
+author = RadioTray Team
+version = 1.0
+module = editor
+class = EditorPlugin

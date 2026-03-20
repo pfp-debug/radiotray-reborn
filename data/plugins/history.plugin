@@ -1,0 +1,7 @@
+[Plugin]
+name = History
+description = Keep track of recently played stations
+author = RadioTray Reload
+version = 1.0
+module = history
+class = HistoryPlugin

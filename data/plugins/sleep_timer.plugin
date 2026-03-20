@@ -1,0 +1,7 @@
+[Plugin]
+name = Sleep Timer
+description = Automatically stop playback after a specified time
+author = RadioTray Reload
+version = 1.0
+module = sleep_timer
+class = SleepTimerPlugin

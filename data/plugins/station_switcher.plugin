@@ -1,0 +1,7 @@
+[Plugin]
+name = Station Switcher
+description = Switch between stations using Next/Previous
+author = RadioTray Contributors
+version = 1.0
+module = station_switcher
+class = StationSwitcherPlugin

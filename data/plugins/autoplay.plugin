@@ -1,0 +1,7 @@
+[Plugin]
+name = AutoPlay
+description = Resume playback on startup
+author = RadioTray Reload
+version = 1.0
+module = autoplay
+class = AutoPlayPlugin

@@ -1,0 +1,7 @@
+[Plugin]
+name = Notification
+description = Desktop notifications for track changes
+author = RadioTray Reload
+version = 1.0
+module = notification
+class = NotificationPlugin

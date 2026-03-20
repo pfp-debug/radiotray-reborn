@@ -1,0 +1,7 @@
+[Plugin]
+name = GNOME Media Keys
+description = Multimedia key support for GNOME desktop
+author = RadioTray Contributors
+version = 1.0
+module = gnome_media_keys
+class = GnomeMediaKeysPlugin
