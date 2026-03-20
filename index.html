@@ -14,7 +14,6 @@
         body { font-family: 'Segoe UI', 'Ubuntu', sans-serif; background: linear-gradient(135deg, #1a1a2e, #16213e); color: #e8e8e8; min-height: 100vh; line-height: 1.6; }
         .container { max-width: 900px; margin: 0 auto; padding: 20px; }
         header { text-align: center; padding: 60px 20px; background: linear-gradient(180deg, rgba(255,107,107,0.15), transparent); }
-        .logo { font-size: 3.5rem; font-weight: bold; background: linear-gradient(135deg, #ff6b6b, #feca57, #48dbfb); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 10px; }
         .tagline { font-size: 1.4rem; color: #a0a0a0; margin-bottom: 30px; }
         .download-section { background: rgba(255,255,255,0.05); border-radius: 20px; padding: 40px; margin: 40px 0; text-align: center; border: 1px solid rgba(255,255,255,0.1); }
         .download-btn { display: inline-block; background: linear-gradient(135deg, #ff6b6b, #ee5a5a); color: white; padding: 18px 50px; border-radius: 50px; text-decoration: none; font-size: 1.2rem; font-weight: bold; margin: 15px; box-shadow: 0 4px 20px rgba(255,107,107,0.4); }
@@ -36,8 +35,10 @@
 <body>
     <header>
         <div class="container">
-            <img src="screenshots/screenshot1.png" alt="RadioTray" style="max-width: 150px; border-radius: 30px; margin-bottom: 20px;">
-            <h1 class="logo">RadioTray [reborn]</h1>
+            <div style="margin-bottom: 20px;">
+                <img src="radiotray-logo.png" alt="RadioTray" style="width: 128px; height: 128px; border-radius: 25px; box-shadow: 0 4px 25px rgba(255,107,107,0.3);">
+            </div>
+            <h1 style="font-size: 3rem; font-weight: bold; background: linear-gradient(135deg, #ff6b6b, #feca57, #48dbfb); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 10px;">RadioTray [reborn]</h1>
             <p class="tagline">A modern online radio streaming player for Linux</p>
             <p style="color: #888; max-width: 600px; margin: 0 auto;">
                 Lightweight, feature-rich, and lives in your system tray. Built with GTK, GStreamer, and Python 3.10+.
